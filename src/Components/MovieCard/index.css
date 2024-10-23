@@ -1,0 +1,12 @@
+.movie-card{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    width: 14rem;
+    
+}
+.btn-card{
+    background-color: transparent;
+    border-width: 0;
+}

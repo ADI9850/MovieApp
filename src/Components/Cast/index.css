@@ -1,0 +1,22 @@
+.cast-card {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .cast{
+      padding: 2rem;
+  }
+  .cart {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    width: 10rem;
+  }
+  
+  .movieposter{
+      height: 240px;
+      width: 160px;
+      background-color: grey;
+  }

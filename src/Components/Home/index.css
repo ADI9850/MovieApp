@@ -1,0 +1,17 @@
+.home{
+    height: 100dvh;
+    width: 100dvw;
+  
+
+ 
+}
+.movie-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+    height: 100%;
+    width: 100%;
+    padding-top: 1rem;
+    background-color: black;
+}
