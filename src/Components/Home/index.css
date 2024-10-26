@@ -1,17 +1,71 @@
-.home{
-    height: 100dvh;
-    width: 100dvw;
-  
-
- 
+.Home {
+    
+    padding: 20px;
 }
-.movie-list{
+
+.movie-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 2rem;
-    height: 100%;
-    width: 100%;
-    padding-top: 1rem;
-    background-color: black;
+    justify-content: space-between; 
+}
+
+.movie-card {
+    display: flex;
+    margin: 10px;
+}
+
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    background-color:black; 
+}
+
+.pagination-controls button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; 
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pagination-controls button:hover {
+    background-color: #0056b3; 
+}
+
+.page-numbers {
+    display: flex;
+    align-items: center;
+}
+
+.page-numbers button {
+    margin: 0 5px;
+    background-color: transparent; 
+    color: #007bff; 
+    border: 1px solid #007bff; 
+}
+
+.page-numbers button.active {
+    background-color: #007bff; 
+    color: white; 
+}
+
+
+@media (max-width: 768px) {
+    .movie-card {
+        flex: 1 1 calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-card {
+        flex: 1 1 100%; 
+    }
 }

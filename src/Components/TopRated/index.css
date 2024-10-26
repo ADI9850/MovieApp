@@ -1,3 +1,42 @@
-.topRate{
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Border around the pagination box */
+    border-radius: 5px; /* Rounded corners */
+    background-color:black; /* Background color */
+}
+
+.pagination-controls button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Button background */
     color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pagination-controls button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.page-numbers {
+    display: flex;
+    align-items: center;
+}
+
+.page-numbers button {
+    margin: 0 5px;
+    background-color: transparent; /* Transparent for numbers */
+    color: #007bff; /* Color for the page numbers */
+    border: 1px solid #007bff; /* Border for page numbers */
+}
+
+.page-numbers button.active {
+    background-color: #007bff; /* Active page button color */
+    color: white; /* Text color for active */
 }

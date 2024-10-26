@@ -3,10 +3,11 @@
     flex-direction: column;
     color: white;
     text-align: center;
-    width: 14rem;
+    margin: 50px;
     
 }
 .btn-card{
     background-color: transparent;
     border-width: 0;
 }
+
