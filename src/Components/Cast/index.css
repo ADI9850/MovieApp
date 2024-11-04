@@ -20,3 +20,60 @@
       width: 160px;
       background-color: grey;
   }
+  .pagination-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    background-color:black; 
+}
+
+.pagination-controls button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; 
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pagination-controls button:hover {
+    background-color: #0056b3; 
+}
+
+.page-numbers {
+    display: flex;
+    align-items: center;
+}
+
+.page-numbers button {
+    margin: 0 5px;
+    background-color: transparent; 
+    color: #007bff; 
+    border: 1px solid #007bff; 
+}
+
+.page-numbers button.active {
+    background-color: #007bff; 
+    color: white; 
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pagination-controls {
+    flex-direction: row;
+  }
+
+  .page-numbers {
+    display: none; /* Hide page number buttons on small screens */
+  }
+
+  .pagination-controls button {
+    width: auto; /* Keep Previous and Next buttons small */
+    margin: 0 5px;
+  }
+}
